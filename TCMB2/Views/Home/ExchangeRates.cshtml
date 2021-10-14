@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Güncel Kurlar";
+}
+<h1>@ViewData["Title"]</h1>
+
+<button class="btn btn-primary btn-lg w-100 my-3" id="update_button">Verileri Güncelle</button>
+
+@{
+    List<TCMB2.Controllers.HomeController.Currency> currencies = ViewBag.currencies as List<TCMB2.Controllers.HomeController.Currency>;
+}
+
+<table class="table table-striped tbl-hover w-100" id="currencies_table">
+    <thead>
+        <tr>
+            <th>Kod</th>
+            <th>İsim</th>
+            <th>Alış Fiyatı</th>
+            <th>Satış Fiyatı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var currency in currencies)
+        {
+            <tr>
+                <td>@currency.code / TRY</td>
+                <td>@currency.name</td>
+                <td>@currency.price_buy</td>
+                <td>@currency.price_sell</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">    
+
+    <script>
+        $(document).ready(function () {
+            $("#currencies_table").DataTable({
+                "aaSorting": [],
+                paging: false
+            });           
+        });
+
+        $("#update_button").click(function () {
+            $.get("../Api/GetLastCurrencies").done(function (data) {
+                if (data == "success") {
+                    window.location.reload(true);
+                } else {
+                    alert("Bir hata oluştu.");
+                }
+            });
+        });
+    </script>
+}
+
+
+
+
+
