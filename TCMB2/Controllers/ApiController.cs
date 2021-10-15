@@ -31,7 +31,7 @@ namespace TCMB2.Controllers
 
             //verinin okunup, veritabanına kaydedildiği bölüm
             XmlDocument xml = new XmlDocument();
-            xml.Load("https://www.gamermarkt.com/currencies.xml");
+            xml.Load("https://www.tcmb.gov.tr/kurlar/today.xml");
 
             XmlElement doc = xml.DocumentElement;
             XmlNodeList nodes = doc.SelectNodes("/Tarih_Date/Currency");

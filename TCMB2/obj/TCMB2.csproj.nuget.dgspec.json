@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FMK Legion\\source\\repos\\TCMB2\\TCMB2\\TCMB2.csproj": {}
+    "C:\\Users\\afra_\\Documents\\GitHub\\TCMB2\\TCMB2\\TCMB2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FMK Legion\\source\\repos\\TCMB2\\TCMB2\\TCMB2.csproj": {
+    "C:\\Users\\afra_\\Documents\\GitHub\\TCMB2\\TCMB2\\TCMB2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FMK Legion\\source\\repos\\TCMB2\\TCMB2\\TCMB2.csproj",
+        "projectUniqueName": "C:\\Users\\afra_\\Documents\\GitHub\\TCMB2\\TCMB2\\TCMB2.csproj",
         "projectName": "TCMB2",
-        "projectPath": "C:\\Users\\FMK Legion\\source\\repos\\TCMB2\\TCMB2\\TCMB2.csproj",
-        "packagesPath": "C:\\Users\\FMK Legion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FMK Legion\\source\\repos\\TCMB2\\TCMB2\\obj\\",
+        "projectPath": "C:\\Users\\afra_\\Documents\\GitHub\\TCMB2\\TCMB2\\TCMB2.csproj",
+        "packagesPath": "C:\\Users\\afra_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\afra_\\Documents\\GitHub\\TCMB2\\TCMB2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FMK Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\afra_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
